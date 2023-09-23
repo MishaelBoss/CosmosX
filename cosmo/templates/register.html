@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="shortcut icon" sizes="32x32" href="{{ url_for('static', filename='icons/Cosmo_ico.png')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/panel.css')}}">
+        <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+        <link href="../static/signup.css" rel="stylesheet">
+        <title>Cosmos-Регистрация</title>
+    </head>
+</html>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/newpassword.js"></script>
+
+    <div class="login" id="outer">
+        <div id="inner">
+            <div>
+                <div>
+                    
+                    <div class="login-card-header">
+                        <h2 id="text">Регистрация</h2>
+                    </div>
+                    <br>
+                    <form class="login-card-form" method="post">
+                        <div  class="inputBox">
+                            <input type="text" placeholder="Введите Логин" id="loginForm" name="login">
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <input type="text" placeholder="Введите Email" id="emailForm" name="email">
+                        </div>
+                        <br>
+                        <div class="inputBox">
+                            <input type="password" placeholder="Введите Пароль" id="passwordForm" name="password">
+                        </div>
+                        <br>
+                        <label><input type="checkbox" class="apavolku-galocksed"> Показать пароль</label>
+                        <br><br>
+                        <div class="inputBox">
+                            <input type="submit"  value="Логин" id="btn"> 
+                        </div>
+                        <div class="group">
+                            <a href="/login">Войти</a>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
